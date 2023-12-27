@@ -1,0 +1,55 @@
+$blue: #000055
+$dark-blue: #000034
+$banner-bg: #00012B
+$magenta: #ff267e
+$grey: #d9d9d9
+$white: #FFFFFF
+$green: #33FF33
+
+$font-gilroy-black: Gilroy-Black, sans-serif
+$font-gilroy-heavy: Gilroy-Heavy, sans-serif
+
+body
+  img
+    max-width: 100%
+    height: auto
+.wrapper
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  position: relative
+  width: 50%
+  height: calc(var(--vh, 1vh) * 100)
+  overflow: hidden
+  background: $banner-bg
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-direction: column
+  background: url("../img/bg.jpg") no-repeat 50% 0/cover
+  &__title
+    color: $green
+    font-family: $font-gilroy-black
+    font-size: 88px
+    text-transform: uppercase
+    position: relative
+    top: 20px
+    z-index: 2
+    line-height: 95px
+    span
+      -webkit-text-stroke: 2px $green
+      color: transparent
+      font-family: $font-gilroy-heavy
+  &__pers
+    position: relative
+    top: 10px
+    max-width: 80vh
+    flex-shrink: 0
+
+
+
+
+
